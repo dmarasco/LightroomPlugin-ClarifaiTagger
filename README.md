@@ -1,4 +1,6 @@
-# LightroomPlugin-ClarifaiTagger
+# Fork of safx/LightroomPlugin-ClarifaiTagger
+
+*Fork allows user to choose modelId for tagging from Clarifai website*
 
 ![](Images/ClarifaiTagger1.png)
 
@@ -6,6 +8,7 @@ This Lightroom plugin helps you to add keywords to your photos, powered by the [
 
 * works with JPEG and Raw files
 * works on Windows and Mac OS X (not yet tested on Windows)
+
 
 ## Create a Developer Account on Clarifai.com
 
