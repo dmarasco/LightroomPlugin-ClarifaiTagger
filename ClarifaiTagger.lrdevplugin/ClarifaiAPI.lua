@@ -10,7 +10,7 @@ local logger = LrLogger('ClarifaiAPI')
 logger:enable('print')
 
 
-local tagAPIURL   = 'https://api.clarifai.com/v2/models/aaa03c23b3724a16a56b629203edc62c/outputs'
+local tagAPIURL   = 'https://api.clarifai.com/v2/models/eee28c313d69466f836ab83287a54ed9/outputs'
 
 --------------------------------
 

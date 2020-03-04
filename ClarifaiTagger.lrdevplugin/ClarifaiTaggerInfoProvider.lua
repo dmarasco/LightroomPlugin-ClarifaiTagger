@@ -43,6 +43,25 @@ function ClarifaiTaggerInfoProvider.sectionsForTopOfDialog(viewFactory, property
                value = bind { key = 'clientId', object = prefs },
             },
          },
+         
+         viewFactory:row {
+            spacing = viewFactory:label_spacing(),
+
+            viewFactory:static_text {
+               tooltip = "Copy from your Clarifai Account https://developer.clarifai.com/account/api-keys.",
+               title = LOC '$$$/ClarifaiTagger/Settings/modelURL=Model URL:',
+               alignment = 'right',
+               -- width = share 'title_width',
+            },
+
+            viewFactory:edit_field {
+               tooltip = "Copy from the setup page on Clarifai.com for your Clarifai application.",
+               fill_horizonal = 1,
+               width_in_chars = 35,
+               alignment = 'left',
+               value = bind { key = 'modelURL', object = prefs },
+            },
+         },
 
         --  viewFactory:row {
         --     spacing = viewFactory:label_spacing(),
