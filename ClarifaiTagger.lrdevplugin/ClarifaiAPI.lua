@@ -10,8 +10,8 @@ local logger = LrLogger('ClarifaiAPI')
 logger:enable('print')
 
 
--- local tagAPIURL   = 'https://api.clarifai.com/v2/models/aaa03c23b3724a16a56b629203edc62c/outputs'
-
+local defaultModel = 'aaa03c23b3724a16a56b629203edc62c'
+-- model id travel: 
 --------------------------------
 
 ClarifaiAPI = {}
@@ -27,7 +27,17 @@ function ClarifaiAPI.getTags_impl(photos, thumbnailPaths)
     -- Model URL
     local url_prefix = 'https://api.clarifai.com/v2/models/'
     local url_suffix = '/outputs'
-    local tagAPIURL = url_prefix .. prefs.modelId .. url_suffix
+
+    -- Default Check
+    local modelId = ''
+
+    if (prefs.modelId == nil or prefs.modelId == '') then
+      modelId = defaultModel
+    else
+      modelId = prefs.modelId
+    end
+
+    local tagAPIURL = url_prefix .. modelId .. url_suffix
     
     
     -- Request

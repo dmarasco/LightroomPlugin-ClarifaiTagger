@@ -6,6 +6,7 @@ local defaultPrefValues = {
    -- CLARIFAI CONFIGURATION
    clientId = 'Copy from application on Clarifai.com',
    clientSecret = 'Copy from application on Clarifai.com',
+   modelId = 'aaa03c23b3724a16a56b629203edc62c',
    imageSize = 600, -- Default for size of image sent to Clarifai
    keywordLanguage = '', -- Default is language used for creating your Clarifai application
 
